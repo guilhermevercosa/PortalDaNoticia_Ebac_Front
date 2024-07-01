@@ -1,7 +1,134 @@
-h1 {
-    color: rgb(46, 170, 46);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h2 {
-    color: rgb(255, 217, 0);
+body > header {
+    background-color: #353434;
+    padding: 16px 0;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+header li a {
+    color: #DB00B5;
+    text-decoration: none;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    /*height: 180px;*/
+    border-radius: 10px;
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 25px
+}
+
+.articles article a {
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sports {
+    background-color: #15ff0036;
+    border-radius: 20px;
+}
+
+#economy {
+    background-color: #fffb0036;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#gastronomy {
+    background-color: #ff0a0a36;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#games {
+    background-color: #000fda36;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+/* ======================================================= */
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    margin: 40px;
+    color: #DB00B5;
+}
+
+.container h2 {
+    font-size: 35px;
+}
+
+.logo {
+    position: relative;
+    left: 500px;
+}
+
+.creation-date {
+    color: gray;
 }
